@@ -24,10 +24,11 @@
 @property (strong) IBOutlet NSTextField* panelLabel;
 @property (strong) IBOutlet NSButton* cancelButton;
 
-@property (strong) NSString* title;
+@property (strong, nonatomic) NSString* title;
 @property (strong) id<SIProgressPanelDelegate> delegate;
-@property (assign) double doubleValue;
+@property (assign, nonatomic) double doubleValue;
 
 -(void)showProgressPanelInWindow:(NSWindow*)window;
+-(IBAction)pressCancel:(id)sender;
 
 @end

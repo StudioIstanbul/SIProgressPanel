@@ -172,6 +172,14 @@
 					</object>
 					<int key="connectionID">23</int>
 				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBActionConnection" key="connection">
+						<string key="label">pressCancel:</string>
+						<reference key="source" ref="1001"/>
+						<reference key="destination" ref="978001040"/>
+					</object>
+					<int key="connectionID">24</int>
+				</object>
 			</array>
 			<object class="IBMutableOrderedSet" key="objectRecords">
 				<array key="orderedObjects">
@@ -457,7 +465,7 @@
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">23</int>
+			<int key="maxID">24</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -472,6 +480,17 @@
 				<object class="IBPartialClassDescription">
 					<string key="className">SIProgressPanel</string>
 					<string key="superclassName">UKNibOwner</string>
+					<object class="NSMutableDictionary" key="actions">
+						<string key="NS.key.0">pressCancel:</string>
+						<string key="NS.object.0">id</string>
+					</object>
+					<object class="NSMutableDictionary" key="actionInfosByName">
+						<string key="NS.key.0">pressCancel:</string>
+						<object class="IBActionInfo" key="NS.object.0">
+							<string key="name">pressCancel:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+					</object>
 					<dictionary class="NSMutableDictionary" key="outlets">
 						<string key="cancelButton">NSButton</string>
 						<string key="panelLabel">NSTextField</string>

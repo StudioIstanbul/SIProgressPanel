@@ -10,10 +10,10 @@
 		A94DE0121AABAE2B00E4DA47 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A94DE0111AABAE2B00E4DA47 /* Cocoa.framework */; };
 		A94DE01C1AABAE2B00E4DA47 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A94DE01A1AABAE2B00E4DA47 /* InfoPlist.strings */; };
 		A94DE0201AABAE2B00E4DA47 /* SIProgressPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = A94DE01F1AABAE2B00E4DA47 /* SIProgressPanel.m */; };
-		A94DE0361AABAFF500E4DA47 /* SIProgressPanel.xib in Resources */ = {isa = PBXBuildFile; fileRef = A94DE0351AABAFF500E4DA47 /* SIProgressPanel.xib */; };
 		A94DE0371AABB51800E4DA47 /* SIProgressPanel.h in Headers */ = {isa = PBXBuildFile; fileRef = A94DE01E1AABAE2B00E4DA47 /* SIProgressPanel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A94DE03A1AABBA8E00E4DA47 /* UKNibOwner.h in Headers */ = {isa = PBXBuildFile; fileRef = A94DE0381AABBA8D00E4DA47 /* UKNibOwner.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A94DE03B1AABBA8E00E4DA47 /* UKNibOwner.m in Sources */ = {isa = PBXBuildFile; fileRef = A94DE0391AABBA8E00E4DA47 /* UKNibOwner.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A9F8E3541AACE1CE00BB3841 /* SIProgressPanel.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9F8E3561AACE1CE00BB3841 /* SIProgressPanel.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,9 +27,13 @@
 		A94DE01D1AABAE2B00E4DA47 /* SIProgressPanel-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SIProgressPanel-Prefix.pch"; sourceTree = "<group>"; };
 		A94DE01E1AABAE2B00E4DA47 /* SIProgressPanel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SIProgressPanel.h; sourceTree = "<group>"; };
 		A94DE01F1AABAE2B00E4DA47 /* SIProgressPanel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SIProgressPanel.m; sourceTree = "<group>"; };
-		A94DE0351AABAFF500E4DA47 /* SIProgressPanel.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SIProgressPanel.xib; sourceTree = "<group>"; };
 		A94DE0381AABBA8D00E4DA47 /* UKNibOwner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UKNibOwner.h; sourceTree = "<group>"; };
 		A94DE0391AABBA8E00E4DA47 /* UKNibOwner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UKNibOwner.m; sourceTree = "<group>"; };
+		A9F8E3551AACE1CE00BB3841 /* en */ = {isa = PBXFileReference; lastKnownFileType = file; name = en; path = en.lproj/SIProgressPanel.xib; sourceTree = "<group>"; };
+		A9F8E3571AACE1E100BB3841 /* de */ = {isa = PBXFileReference; lastKnownFileType = file; name = de; path = de.lproj/SIProgressPanel.xib; sourceTree = "<group>"; };
+		A9F8E3581AACE1E100BB3841 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A9F8E3591AACE1E800BB3841 /* tr */ = {isa = PBXFileReference; lastKnownFileType = file; name = tr; path = tr.lproj/SIProgressPanel.xib; sourceTree = "<group>"; };
+		A9F8E35A1AACE1E800BB3841 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,7 +51,7 @@
 		A94DE0041AABAE2B00E4DA47 = {
 			isa = PBXGroup;
 			children = (
-				A94DE0351AABAFF500E4DA47 /* SIProgressPanel.xib */,
+				A9F8E3561AACE1CE00BB3841 /* SIProgressPanel.xib */,
 				A94DE0171AABAE2B00E4DA47 /* SIProgressPanel */,
 				A94DE0101AABAE2B00E4DA47 /* Frameworks */,
 				A94DE00F1AABAE2B00E4DA47 /* Products */,
@@ -151,6 +155,8 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				de,
+				tr,
 			);
 			mainGroup = A94DE0041AABAE2B00E4DA47;
 			productRefGroup = A94DE00F1AABAE2B00E4DA47 /* Products */;
@@ -168,7 +174,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A94DE01C1AABAE2B00E4DA47 /* InfoPlist.strings in Resources */,
-				A94DE0361AABAFF500E4DA47 /* SIProgressPanel.xib in Resources */,
+				A9F8E3541AACE1CE00BB3841 /* SIProgressPanel.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -191,8 +197,20 @@
 			isa = PBXVariantGroup;
 			children = (
 				A94DE01B1AABAE2B00E4DA47 /* en */,
+				A9F8E3581AACE1E100BB3841 /* de */,
+				A9F8E35A1AACE1E800BB3841 /* tr */,
 			);
 			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A9F8E3561AACE1CE00BB3841 /* SIProgressPanel.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A9F8E3551AACE1CE00BB3841 /* en */,
+				A9F8E3571AACE1E100BB3841 /* de */,
+				A9F8E3591AACE1E800BB3841 /* tr */,
+			);
+			name = SIProgressPanel.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

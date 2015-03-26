@@ -23,6 +23,7 @@
 @property (strong) IBOutlet NSProgressIndicator* progressBar;
 @property (strong) IBOutlet NSTextField* panelLabel;
 @property (strong) IBOutlet NSButton* cancelButton;
+@property (strong) IBOutlet NSView* contentView;
 
 @property (strong, nonatomic) NSString* title;
 @property (strong) id<SIProgressPanelDelegate> delegate;

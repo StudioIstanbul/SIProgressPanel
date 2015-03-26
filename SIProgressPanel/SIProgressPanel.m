@@ -30,14 +30,19 @@
 }
 
 -(void)setDoubleValue:(double)xdoubleValue {
-    [progressBar setIndeterminate:NO];
-    progressBar.maxValue = 1;
-    progressBar.doubleValue = xdoubleValue;
     doubleValue = xdoubleValue;
     if (xdoubleValue >= 1) {
         [[NSApplication sharedApplication] stopModal];
         [self.progressPanel orderOut:self];
         [[NSApplication sharedApplication] endSheet:progressPanel];
+    }
+    if (xdoubleValue < 0) {
+        [progressBar setIndeterminate:YES];
+        [progressBar startAnimation:self];
+    } else {
+        progressBar.maxValue = 1;
+        progressBar.doubleValue = xdoubleValue;
+        [progressBar setIndeterminate:NO];
     }
 }
 
